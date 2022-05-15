@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+</head>
+<body>
+#if($user)
+<div id="container" style="width:800px">
+ 
+<div id="header" style="background-color:#ff69b4">
+<h1 style="margin-bottom:0;">Chat System BP19025</h1></div>
+ 
+<div id="menu" style="background-color:#ffe4c4;height:430px;width:200px;float:left;">
+<iframe src="/chs" name="iframe_c" width="195" height="425" frameborder="1">
+</iframe>
+</div>
+
+<div id="content" style="background-color:#40e0d0;height:430px;width:600px;float:left;">
+<iframe srcdoc="<h3>Please select a channel</h3>" name="iframe_a"width="595" height="425">
+</iframe>
+ </div>
+ 
+<div id="footer" style="background-color:#add8e6;clear:both;text-align:left;">
+    <form action="/ch" method="get">
+        <input type="text" name="channel" id="channel" required>
+        <input type="submit" value="Add Channel">
+    </form>
+<a href="/userlist">Switch to the User List</a>
+</div>
+
+#else
+<div id="container" style="width:300px">
+<a href="/userlist">Switch to the User List to login</a>
+</div>
+#end
+</body>
+</html>

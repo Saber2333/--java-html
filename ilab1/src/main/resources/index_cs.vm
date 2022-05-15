@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+</head>
+<body>
+<form action="/ch/$channel/s" method="get">
+<h3>#$channel<h3>
+    <ol>
+        #foreach($chat in $chats)
+     <li>   #foreach($chatr in $chat.get())
+	$chatr<br>
+	     #end</li>
+        #end
+    </ol>
+    </form>
+</body>
+</html>

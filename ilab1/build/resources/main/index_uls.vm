@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+</head>
+<body>
+<h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registered user</h>
+<form action="/userlists" method="get">
+    <ul>
+        #foreach($user in $userlist)
+ <li>$user</li>
+        #end
+    </ul>
+    </form>
+</body>
+</html>

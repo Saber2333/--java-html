@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>Chat</title>
+</head>
+<body>
+<form action="/ch/$channel" method="get">
+<div id="content" style="background-color:#ffe4e1;float:center;">
+<iframe src="/ch/$channel/s" name="iframe_c"width="565" height="370"frameborder="0">
+</iframe>
+</div>
+<div id="footer" style="background-color:#fff0f5;clear:both;text-align:center;">
+        <input type="text" name="chat" id="chat" required>
+        <input type="submit" value="Say">
+        <input type="text" name="num" id="num" size="3"><--Enter a line number to reply
+</div>
+    </form>
+</body>
+</html>
